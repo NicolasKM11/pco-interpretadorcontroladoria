@@ -1,20 +1,20 @@
-# Interpretador PCO - Streamlit
+# Interpretador PCO
 
-App para interpretar cenários de Controladoria/PCO no padrão RF, RC e RP/NCG.
+App em Streamlit para interpretar simulações de Controladoria/PCO.
 
-## Como rodar
+## Arquivos aceitos
+- Excel: .xlsx, .xlsm
+- Imagem/print: .png, .jpg, .jpeg
 
-```bash
-pip install -r requirements.txt
-streamlit run app.py
-```
+## Deploy no Streamlit Cloud
+Suba estes arquivos no GitHub:
+- app.py
+- requirements.txt
+- packages.txt
+- .streamlit/config.toml
+- README.md
 
-## Como usar
+Depois faça redeploy no Streamlit Cloud.
 
-1. Envie uma planilha `.xlsx` ou `.xlsm`.
-2. O app tenta localizar automaticamente contas como Faturamento, CPV, Despesas, Empréstimos, NCG, CDG etc.
-3. Confira/ajuste a tabela de variações.
-4. Escolha o tipo de premissa.
-5. Gere respostas prontas para perguntas parecidas com as da prova.
-
-Caso a planilha venha com outro layout, use o modo manual e digite Original/Novo Valor.
+## Observação
+O modo imagem usa OCR. Se o print estiver pequeno ou borrado, revise o texto lido e ajuste a tabela antes de gerar a resposta.
