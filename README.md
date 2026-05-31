@@ -1,20 +1,9 @@
-# Interpretador PCO
+# Interpretador PCO v4
 
-App em Streamlit para interpretar simulações de Controladoria/PCO.
+Versão com base ampliada usando todos os materiais enviados na conversa: PDFs de elaboração de premissas, Cenário 1, Cenário 2, prints de questões, anotações e planilha.
 
-## Arquivos aceitos
-- Excel: .xlsx, .xlsm
-- Imagem/print: .png, .jpg, .jpeg
-
-## Deploy no Streamlit Cloud
-Suba estes arquivos no GitHub:
-- app.py
-- requirements.txt
-- packages.txt
-- .streamlit/config.toml
-- README.md
-
-Depois faça redeploy no Streamlit Cloud.
-
-## Observação
-O modo imagem usa OCR. Se o print estiver pequeno ou borrado, revise o texto lido e ajuste a tabela antes de gerar a resposta.
+## Rodar local
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
